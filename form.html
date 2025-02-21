@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>This is Form. </h1>
+    <form action="/submit.php"></form>
+    <div>
+        <label for="name">Name</label>
+        <input id="name" type="name" placeholder = "Enter your Name">
+    </div>
+
+    <div>
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" placeholder="Enter Phone">
+    </div>
+
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter mail">
+    </div>
+
+    <div>
+        <label for="password">Password</label>
+        <input id="password" type="password" placeholder="password" > 
+    </div>
+
+    <div>
+        <label for="date">Date</label>
+        <input id="date" type="date" >
+    </div>
+
+    <div>
+        <label for="gender">Gender</label>
+        <select name="Gender" id="gender" required>
+            <option value="" disabled selected>Select gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="other">other</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="Nationality">Nationality</label>
+        <select name="Nationality" id="Nationality" required>
+            <option value="" disabled selected>Nationality</option>
+            <option value="Pakistani">Pakistani</option>
+            <option value="Indian">Indian</option>
+            <option value="China">China</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" >
+    </div>
+
+    <!-- radio button  -->
+    <div>Subscribtion plan
+        <br>
+        <input type="radio" name="Subscribtion" id="basic" value="basic"> 
+        <label for="basic">Basic</label>
+        
+        <input type="radio" name="Subscribtion" id="Advance" value="basic"> 
+        <label for="Advance">Advance</label>
+        <input type="radio" name="Subscribtion" id="Primium" value="basic">
+        <label for="Primium">Primium</label>
+    </div>
+    <div>
+        <label for="checkbox"></label>
+        <input id="checkbox" type="checkbox" > Yes I am agree!
+    </div>
+    <div>
+        <label for="comment"></label>
+        <textarea type="textarea" id="comment" placeholder="comment here" required></textarea>
+        
+    </div>
+    <div>
+        <button>submit</button>
+    </div>
+</body>
+</html>
